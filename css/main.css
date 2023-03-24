@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.hero {
+  margin-top: 69px;
+  margin-bottom: 189px;
+}
+
+.hero .hero__subtitle {
+  line-height: 24.55px;
+}
+
+.hero__icons {
+  width: 300px;
+}
+
+.hero__image {
+  max-width: 671px;
+}
+
+@layer components {
+  .btn-primary {
+    box-shadow: 2px 7px 15px rgba(28, 65, 120, 0.3);
+    @apply py-2 px-5 text-base lg:py-4 lg:px-10 lg:text-lg font-normal text-white bg-mainPurple rounded-lg text-center;
+  }
+
+  .btn-card {
+    box-shadow: 2px 7px 15px rgba(28, 65, 120, 0.3);
+    @apply w-full py-2 px-5 text-base lg:py-2 lg:px-10 lg:text-lg font-normal text-white bg-mainPurple rounded-lg2 text-center;
+  }
+}
+
+.spaces__icons {
+  margin-right: 19px;
+}
+
+.icon-item {
+  margin-right: 6.93px;
+}
+
+.overlay {
+  background: linear-gradient(180.1deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 99.91%);
+}
+
+.quote::before {
+  content: "\201C";
+  font-size: 20rem;
+  position: absolute;
+  top: -86px;
+  left: -1rem;
+  line-height: 1;
+  color: #efefef;
+  font-family: sans-serif;
+  z-index: 1;
+}
+
+footer {
+  background-color: #f3f3f6;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.input-footer ::placeholder {
+  color: #c4c4c4;
+  font-weight: normal;
+  font-size: 18px;
+}
